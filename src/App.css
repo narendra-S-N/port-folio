@@ -218,6 +218,38 @@
 
 .experience-section { background: #f3efe7; }
 .experience-list { border-top: 1px solid var(--line); }
+
+@media (min-width: 701px) and (max-width: 1024px) {
+  .site-header { height: 76px; padding: 0 28px; }
+  .brand { font-size: 19px; }
+  .site-header nav { gap: 16px; font-size: 10px; }
+  .header-contact { font-size: 10px; }
+  .hero-section { min-height: 620px; padding: 78px 6% 88px; grid-template-columns: 1fr .85fr; }
+  .hero-copy h1 { font-size: clamp(50px, 7vw, 72px); }
+  .hero-art { width: min(38vw, 340px); height: min(38vw, 340px); min-width: 240px; min-height: 240px; }
+  .section { padding: 84px 6%; }
+  .skills-section, .education-section { padding-left: 6%; padding-right: 6%; }
+  .skill-row { grid-template-columns: 8% 28% 1fr 25px; }
+  .project-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; }
+  .project-visual { height: 300px; }
+  .project-card:last-child { grid-column: 1 / -1; max-width: calc(50% - 10px); }
+  .footer-bottom { margin-top: 110px; }
+}
+
+@media (max-width: 700px) {
+  .site-header { height: auto; min-height: 70px; padding: 17px 20px 13px; flex-wrap: wrap; gap: 16px; }
+  .brand { font-size: 18px; }
+  .site-header nav { order: 3; width: 100%; justify-content: space-between; gap: 0; font-size: 9px; }
+  .site-header nav a { white-space: nowrap; }
+  .hero-section { padding-top: 72px; }
+  .hero-copy h1 { font-size: clamp(45px, 14vw, 58px); }
+  .hero-intro { font-size: 15px; }
+  .section h2 { font-size: clamp(38px, 12vw, 52px); }
+  .skill-row h3 { font-size: 19px; }
+  .skill-row p { font-size: 12px; }
+  .experience-heading h3 { font-size: 23px; }
+  .project-visual { height: min(82vw, 340px); }
+}
 .experience-item { padding: 34px 0 42px; border-bottom: 1px solid var(--line); }
 .experience-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; }
 .experience-heading h3 { margin: 0; font: 500 27px 'DM Sans', sans-serif; letter-spacing: -.05em; }
